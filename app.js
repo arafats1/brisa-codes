@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 // const mongoose = require('mongoose');
 // const bodyParser = require('body-parser');
@@ -42,8 +43,8 @@ app.use('/', register);
 // Server connection
 //const PORT = process.env.PORT || 4000;
 
-app.listen(3000, () => {
-    console.log('Server started on port 3000');
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+    console.log(`Listening at port ${port}`);
 });
-
 module.exports = app;
