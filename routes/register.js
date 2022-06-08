@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const expressValidator = require('express-validator');
+// const expressValidator = require('express-validator');
 
 // const Register = require('../models/registerModel');
 
-router.use(expressValidator());
+// router.use(expressValidator());
 
 router.get('/register', (req, res) => {
     res.render('index');

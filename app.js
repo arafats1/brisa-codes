@@ -3,7 +3,7 @@ const express = require('express');
 // const bodyParser = require('body-parser');
 const path = require('path');
 // const config = require('./config/database');
-const logger = require('./logger/logger');
+// const logger = require('./logger/logger');
 
 // connecting the app using express
 const app = express();
@@ -43,7 +43,7 @@ app.use('/', register);
 //const PORT = process.env.PORT || 4000;
 
 app.listen(3000, () => {
-    logger.info('Server started on port 3000');
+    console.log('Server started on port 3000');
 });
 
 module.exports = app;
